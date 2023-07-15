@@ -11,6 +11,11 @@ public class Pet {
 //    public void addPet(Pet pet) {
 //        this.pets.add(pets.size(),pet);
 //    }
+    public Pet(){}
+
+    public Pet(String name) {
+        this.name = name;
+    }
 
     public void setName(String name) {
         this.name = name;

@@ -10,8 +10,10 @@ public class MainApplication {
 
 
         System.out.println("Hello, how many pets do you have?");
-        input.nextLine();
+        int numOfPets = input.nextInt();
 
+        System.out.println("And what are their names?");
+        String petName = input.nextLine();
 
         Cat cat = new Cat();
 
