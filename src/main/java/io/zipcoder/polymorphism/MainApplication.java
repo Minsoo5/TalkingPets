@@ -14,7 +14,7 @@ public class MainApplication {
         //Ask how many pest
         System.out.println("Hello, how many pets do you have?");
         int numOfPets = input.nextInt();
-        petList = new ArrayList<>(numOfPets);
+        petList = new ArrayList<Pet>(numOfPets);
 
 
         //Ask what kind of pet
@@ -57,7 +57,10 @@ public class MainApplication {
         int petNum = 0;
         for (Pet pets : petList) {
 
-            System.out.printf("Pet number %s: Pet name: %d, and it says: %d ", petNum +1, pets.getName(), pets.speak());
+            String petName = pets.getName();
+            String speak = pets.speak();
+
+            System.out.printf("Pet number %d: Pet name: %s, and it says: %s \n", petNum +1, petName, speak);
 
             petNum++;
         }
